@@ -1,0 +1,52 @@
+*{
+padding: 0;
+margin: 0;
+}
+header{
+background-color: rgba(165, 154, 154, 0.712);
+display:flex;
+height: 6em;
+width: 100%;
+justify-content: center;
+
+}
+#header-section{
+width: 1600px;
+}
+header div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#username{
+width:24%
+}
+#tabs{
+width:60%
+}
+#CV{
+width:16%
+}
+#username,#tabs, #CV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header ul li{
+display: inline;
+margin-right: 2.5em;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+}
+#CV a{
+background-color: #0047ab;
+padding: .6em;
+color: #ffff;
+border-radius: 25px;
+}
