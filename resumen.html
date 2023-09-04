@@ -8,6 +8,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Lobster&family=Poppins:wght@600&family=Raleway:ital@1&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 
@@ -19,11 +22,11 @@
             </div>
             <div id="tabs">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SKILLS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <div id="CV">
@@ -31,17 +34,138 @@
             </div>
         </div>
     </header>
+    <main>
+        <div id="wrapper">
 
-    <section id="portfolio">
-        <h1>Skills</h1>
-        <div class="box">
-            <h1>Cafe Website</h1>
-        </div>
-        <div class="box">
-            <h1>Pet shop</h1>
-        </div>
+            <section id="portfolio">
+                <h1>Skills</h1>
+                <div class="box">
+                    <h1>Cafe Website</h1>
+                </div>
+                <div class="box">
+                    <h1>Pet shop</h1>
+                </div>
+            </section>
+            <section id="contact-s">
+                <div id="contact-1">
+                    <div>
+                        <h1> Get in touch</h1>
+                    </div>
+                    <div>
+                        <h1> Email: </h1>
+                    </div>
+                    <p>omarm.rico.98@gmail.com</p>
+                    <p>omarm.98.rico@gmail.com</p>
+                    <div>
+                        <h1> Phone: </h1>
+                    </div>
+                    <p>(+353) 0830518728</p>
+                    <div>
+                        <h1> Address: </h1>
+                    </div>
+                    <div>
+                        <h1>Social Media </h1>
+                    </div>
+                </div>
+                
+                <form id="contact-2">
+                    <div><label>Name</label></div>
+                    <div><input placeholder="eg. John Smith"></div>
+                    <div><label>Email</label></div>
+                    <div><input placeholder="eg. johnsmith@mail.com"></div>
+                    <div><label>Phone</label></div>
+                    <div><input placeholder="Phone number"></div>
+                    <div><label>Message</label></div>
+                    <div><textarea height="60"  placeholder="Write message..."></textarea></div>
+                    <button>SEND</button>
+                </form>
+            </section>
+            <section>
 
-    </section>
+                <div class="parent">
+                    <div class="box">
+                        <section class="child1">
+                            <div class="c1-picture">
+                                <div class="c1-picture-p">
+
+                                </div>
+                            </div>
+
+                            <div class="c1-name">
+
+                                <input placeholder="PRODUCT">
+                            </div>
+                            <div class="c1-description">
+                                <textarea placeholder="PRODUCT DESCRIPTION" rows="6" cols="60"></textarea>
+
+                            </div>
+
+                            <div class="c1-price">
+                                <input placeholder="PRICE">
+                            </div>
+                            <div class="c1-qty">
+                                <input readonly="" placeholder="QUANTITY IN STOCK" value="This is">
+                            </div>
+
+                            <div class="c1-button">
+                                <button>ADD PRODUCT</button>
+                            </div>
+                        </section>
+
+                        <section class="child2">
+                            <div class="child-child">
+                                <div class="e1-picture-p">
+                                </div>
+                                <div class="e1-name-p">
+                                    <h1><b>Snakeskin discus</b></h1>
+                                </div>
+                                <div class="e1-price-p">
+                                    <h3>Price: &#160;
+                                        &#160;&euro;<h3 class="price-p-p">10.00</h3>
+                                    </h3>
+                                </div>
+                                <div class="e1-add-cart-p">
+                                    <button>ADD CART</button>
+                                </div>
+                            </div>
+
+                            <div class="child-child">
+                                <div class="e1-picture-p">
+                                </div>
+                                <div class="e1-name-p">
+                                    <h1><b>Galaxy Red Tourquese</b></h1>
+                                </div>
+                                <div class="e1-price-p">
+                                    <h3>Price: &#160;
+                                        &#160;&euro;<h3 class="price-p-p">10.00</h3>
+                                    </h3>
+                                </div>
+                                <div class="e1-add-cart-p">
+                                    <button>ADD CART</button>
+                                </div>
+                            </div>
+                            <div class="child-child">
+                                <div class="e1-picture-p">
+                                </div>
+                                <div class="e1-name-p">
+                                    <h1><b>Galaxy Red Tourquese</b></h1>
+                                </div>
+                                <div class="e1-price-p">
+                                    <h3>Price: &#160;
+                                        &#160;&euro;<h3 class="price-p-p">10.00</h3>
+                                    </h3>
+                                </div>
+                                <div class="e1-add-cart-p">
+                                    <button>ADD CART</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
 
 </body>
 

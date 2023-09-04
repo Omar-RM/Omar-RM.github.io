@@ -1,52 +1,170 @@
-*{
-padding: 0;
-margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
-header{
-background-color: rgba(165, 154, 154, 0.712);
-display:flex;
-height: 6em;
-width: 100%;
-justify-content: center;
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 12%);
+    font-family: 'Poppins';
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER SECTION */
+header {
+    background-color: rgba(165, 154, 154, 1);
+    display: flex;
+    height: 6em;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    transition: all 0.3s ease;
 
 }
-#header-section{
-width: 1600px;
+
+#header-section {
+    width: 1600px;
 }
-header div{
+
+header div {
     display: flex;
     align-content: center;
     justify-content: center;
 }
-#username{
-width:24%
+
+#username {
+    width: 24%
 }
-#tabs{
-width:60%
+
+#tabs {
+    width: 60%
 }
-#CV{
-width:16%
+
+#CV {
+    width: 16%
 }
-#username,#tabs, #CV {
+
+#username,
+#tabs,
+#CV {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-
-header ul li{
-display: inline;
-margin-right: 2.5em;
 
 }
-header a{
+
+header ul li {
+    display: inline;
+    margin-right: 2.5em;
+
+}
+
+header ul li a:hover {
+    border: 3px solid #c00e0e;;
+    border-radius: 20px;
+}
+
+header a {
     text-decoration: none;
     color: black;
     font-size: 1.6em;
+    padding: .6em;
+    border-radius: 20px;
+    border: 3px solid rgba(165, 154, 154, 0.0);
+
 }
-#CV a{
-background-color: #4B0082;
-padding: .6em;
-color: #ffff;
-border-radius: 25px;
+
+#username h1 {
+    font-size: 2.5em;
+
+}
+
+#CV a {
+    background-color:#c00e0e;;
+    padding: .6em;
+    color: #ffff;
+    border-radius: 25px;
+}
+
+/*  WRAPPER SECTION  */
+#wrapper {
+    position: relative;
+    top: 100px;
+    width: 1600px;
+    justify-content: center;
+}
+
+/* PORTFOLIO SECTION */
+#portfolio {
+    width: 100%;
+    background-color: #4B0082;
+    border: 10px solid rgb(60, 255, 0);
+
+}
+
+/* CONTACT SECTION */
+#contact-s {
+
+    /* border: 10px solid rgb(60, 255, 0); */
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+#contact-1 {
+    width: 60%;
+    height: 100%;
+
+}
+
+#contact-2 {
+    background-color: hsl(0, 0%, 19%);
+    width: 360px;
+    height: 540px;
+    display: block;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+#contact-2 div {
+    width: 100%;
+}
+
+#contact-2 label {
+    color: #ffff;
+    font-size: 20px;
+
+}
+
+#contact-2 input,
+#contact-2 textarea {
+    background-color: hsl(0, 0%, 16%);
+    color: #c00e0e;
+    width: 95%;
+    padding: .8em;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1em;
+    font-size: 20px;
+    overflow: hidden;
+}
+#contact-2 textarea{
+    resize: none;
+    height: 90px;
+}
+
+#contact-2 button {
+    width: 100%;
+    border-radius: 7px;
+    height: 2em;
+    font-size: 20px;
+    margin-top: .5em;
 }
