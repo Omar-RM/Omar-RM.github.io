@@ -6,7 +6,7 @@
 body {
     align-items: center;
     justify-content: center;
-    background-color: hsl(0, 0%, 12%);
+    background-color:#050021;
     font-family: 'Poppins';
 }
 
@@ -111,11 +111,10 @@ header a {
 }
 /*  SKILLS */
 #skills{
-    border: 2px solid blue;
     height: auto;
-    width: 95%;
+    width: 100%;
     display: grid;
-     grid-template-columns: auto;
+    grid-template-columns: auto;
 }
 .skills-title{
     
@@ -124,9 +123,9 @@ header a {
 .skills-subcategory{
     height: auto;
     width: 95%;
-    display: flex;
+    display: grid;
     color: #ffff;
-    background-color:  hsl(0, 1%, 33%);
+    background-color: #2f0180;
     margin: 2em;
     border-radius: 20px;
 
@@ -136,37 +135,43 @@ header a {
     align-items: center;
     justify-content: center;
     margin-right: 2em;
-    width: 180px;
+    color: #ffe600;
+    font-size: 2em;
+    margin-bottom: 2em;
+    width: 100%;
 }
 .skills-boxes{
 display: grid;
-grid-template-columns: auto auto auto auto auto auto;
+grid-template-columns: auto auto auto auto auto auto auto;
 height: auto;
 border-radius: 10px;
 margin-bottom: 2em;
+width: 95%;
+padding: 0 3em;
+justify-content: center;
 
 }
 .skills-box{
 height: 190px;
 width: 150px;
-margin: 1em;
+margin: .5em;
 border-radius: 20px;
-background-color:  hsl(0, 1%, 33%);
-box-shadow: 5px;
+background-color: #050021;
 padding: .5em;
-box-shadow: inset -2px -2px 2px rgba(255, 255, 255, .2),
-inset 2px 5px 15px rgba(0, 0, 0, .5);
-
 }
 .skills-box-img{
     text-align: center;
     display: flex;
+    align-content: center;
     justify-content: center;
     width:140px;
     height: 150px;
 }
 .skills-box-img img{
-    width:140px;
+    padding-top: 1.7em;
+    padding-left: 1em;
+    width:100px;
+    height: 90px;
     /* height: 150px; */
 }
 .skills-box-title{
