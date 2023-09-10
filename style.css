@@ -6,8 +6,8 @@
 body {
     align-items: center;
     justify-content: center;
-    background-color:#050021;
-    font-family: 'Poppins';
+    background: radial-gradient( #091813, #050021);
+        font-family: 'Poppins';
 }
 
 main {
@@ -18,7 +18,7 @@ main {
 
 /* HEADER SECTION */
 header {
-    background-color:#7651b8;
+    background-color: #7651b8;
     display: flex;
     height: 6em;
     width: 100%;
@@ -67,7 +67,8 @@ header ul li {
 }
 
 header ul li a:hover {
-    border: 3px solid #c00e0e;;
+    border: 3px solid #c00e0e;
+    ;
     border-radius: 20px;
 }
 
@@ -87,7 +88,8 @@ header a {
 }
 
 #CV a {
-    background-color:#c00e0e;;
+    background-color: #c00e0e;
+    ;
     padding: .6em;
     color: #ffff;
     border-radius: 25px;
@@ -102,25 +104,79 @@ header a {
     overflow: hidden;
 }
 
+/* HOME */
+#home {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: 4em;
+    height: 1000px;
+
+}
+
+#photo {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#photo-box{
+    background: url(profile.jpg);
+    background-color: #fff;
+    background-position: center center;
+    width: 450px;
+    height: 500px;
+    animation: animate 7s ease-in-out infinite;
+    border: 1px solid red;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+    }
+    75%{
+        border-radius: 60% 60% 70% 40%/ 50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+
+        
+    }
+
+}
+
+#home-text {
+    width: 96%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
 /* PORTFOLIO SECTION */
 #portfolio {
     width: 100%;
     background-color: #4B0082;
     border: 10px solid rgb(60, 255, 0);
-
 }
+
 /*  SKILLS */
-#skills{
+#skills {
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: auto;
 }
-.skills-title{
-    
-    
-}
-.skills-subcategory{
+
+.skills-title {}
+
+.skills-subcategory {
     height: auto;
     width: 95%;
     display: grid;
@@ -130,7 +186,8 @@ header a {
     border-radius: 20px;
 
 }
-.skills-subtitle{
+
+.skills-subtitle {
 
     display: flex;
     align-items: center;
@@ -141,41 +198,46 @@ header a {
     margin: 1.3m 0 1em 0;
     width: 100%;
 }
-.skills-boxes{
-display: grid;
-grid-template-columns: auto auto auto auto auto auto auto;
-height: auto;
-border-radius: 10px;
-margin-bottom: 2em;
-width: 95%;
-padding: 0 3em;
-justify-content: center;
+
+.skills-boxes {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 95%;
+    padding: 0 3em;
+    justify-content: center;
 
 }
-.skills-box{
-height: 190px;
-width: 150px;
-margin: .5em;
-border-radius: 20px;
-background-color: #050021;
-padding: .5em;
+
+.skills-box {
+    height: 190px;
+    width: 150px;
+    margin: .5em;
+    border-radius: 20px;
+    background-color: #050021;
+    padding: .5em;
 }
-.skills-box-img{
+
+.skills-box-img {
     text-align: center;
     display: flex;
     align-content: center;
     justify-content: center;
-    width:140px;
+    width: 140px;
     height: 150px;
 }
-.skills-box-img img{
+
+.skills-box-img img {
     padding-top: 1.7em;
     padding-left: 1em;
-    width:100px;
+    width: 100px;
     height: 90px;
     /* height: 150px; */
 }
-.skills-box-title{
+
+.skills-box-title {
     text-align: center;
     font-size: 15px;
     color: #fff;
@@ -193,20 +255,24 @@ padding: .5em;
 #contact-1 {
     width: 60%;
     height: 100%;
-    
+
 }
-#contact-1 h1{
+
+#contact-1 h1 {
     color: #fff
 }
-#contact-1 p{
+
+#contact-1 p {
     font-size: 1.2em;
-    color:  rgba(165, 154, 154, 1);
+    color: rgba(165, 154, 154, 1);
 }
-#c-1-description{
+
+#c-1-description {
     padding: 2em;
 }
-#c-1-description h1{
-font-size: 2.4em;
+
+#c-1-description h1 {
+    font-size: 2.4em;
 }
 
 #contact-2 {
@@ -241,7 +307,8 @@ font-size: 2.4em;
     font-size: 20px;
     overflow: hidden;
 }
-#contact-2 textarea{
+
+#contact-2 textarea {
     resize: none;
     height: 90px;
 }
