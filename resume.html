@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Lobster&family=Poppins:wght@600&family=Raleway:ital@1&display=swap"
         rel="stylesheet">
-    <script src='main.js'></script>
+    
 
 </head>
 
@@ -55,14 +55,22 @@
                 </div>
             </section>
             <section id="skills">
-                <div id="skills-title">
-                    <!-- <h1>My Skills</h1> -->
-                </div>
                 <div class="skills-subcategory">
-                    <div class="skills-subtitle">
-                        <h1>Data Analyst</h1>
+                    <div id="btn-nav" class="skills-nav">
+                        <div class="skills-subtitle active">
+                            <button id="btn1" class="btn">Data analyst</button>
+                        </div>
+                        <div class="skills-subtitle">
+                            <button id="btn2" class="btn" >Front-End</button>
+                        </div>
+                        <div class="skills-subtitle">
+                            <button id="btn3" class="btn">Back-End</button>
+                        </div>
+                        <div class="skills-subtitle">
+                            <button id="btn4" class="btn">Languages</button>
+                        </div>
                     </div>
-                    <div class="skills-boxes">
+                    <div class="skills-boxes active" id="skill-data" >
                         <div class="skills-box">
                             <div class="skills-box-img"><img src="sql.png"></div>
                             <div class="skills-box-title">
@@ -100,12 +108,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skills-subcategory">
-                    <div class="skills-subtitle">
-                        <h1>Programming Languages</h1>
-                    </div>
-                    <div class="skills-boxes">
+                
+
+                    <div class="skills-boxes" id="frontend" style="display:none">
                         <div class="skills-box">
                             <div class="skills-box-img"><img src="JS.png"></div>
                             <div class="skills-box-title">
@@ -134,12 +139,8 @@
 
 
                     </div>
-                </div>
-                <div class="skills-subcategory">
-                    <div class="skills-subtitle">
-                        <h1>FrontEnd</h1>
-                    </div>
-                    <div class="skills-boxes">
+                
+                    <div class="skills-boxes"  id="backend" style="display:none" >
                         <div class="skills-box">
                             <div class="skills-box-img"><img src="JS.png"></div>
                             <div class="skills-box-title">
@@ -160,12 +161,9 @@
                         </div>
 
                     </div>
-                </div>
-                <div class="skills-subcategory">
-                    <div class="skills-subtitle">
-                        <h1>Backend</h1>
-                    </div>
-                    <div class="skills-boxes">
+                
+               
+                    <div class="skills-boxes" id="languages" style="display:none">
                         <div class="skills-box">
                             <div class="skills-box-img"><img src="sql.png"></div>
                             <div class="skills-box-title">
@@ -192,19 +190,21 @@
                         </div>
 
                     </div>
-                </div>
+                
             </section>
 
             <section id="projects">
                 <div class="project">
-                    <div class="project-imagen"></div>
+                    <div class="project-imagen"><a target="_blank"
+                            href="https://tazasrotas.000webhostapp.com/controller/index.php"><img src="cafe.jpg"
+                                width="370px" hegith="370px"></a></div>
                     <div class="project-desc">
                         <div class="project-name">
                             <div class="p-n-name">
                                 <h1> Roots Cafe</h1>
                             </div>
                             <div class="p-n-desc">
-                                <h1>local cafe website to improve its presence in the comunity by sharing updates, menu,
+                                <h1>Local cafe website to improve its presence in the comunity by sharing updates, menu,
                                     and feedback from customers</h1>
                             </div>
                         </div>
@@ -281,5 +281,8 @@
     </main>
 
 </body>
+<footer>
+    <script src='js.js'></script>
+</footer>
 
 </html>
