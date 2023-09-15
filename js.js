@@ -7,7 +7,6 @@ function btnSelected(e) {
         btnCheck(clicked)
     }
 }
-
 var arrayBox = ["skill-data", "frontend", "backend", "languages"];
 function currenBox(e) {
     if (e == "btn1") {
@@ -20,18 +19,17 @@ function currenBox(e) {
         return 3;
     }
 }
-
 var disActive;
 var itembox;
 var boxId = 0;
 var previousItembox ;
 function btnCheck(e) {
-    disActive = document.querySelectorAll('.active'); 
+    disActive = document.querySelectorAll('.active');  //select all the queries with an 'active' class
      var temp = currenBox(e); //find current value in the array
-    itembox= document.getElementById(arrayBox[temp]);
-    previousItembox =document.getElementById(arrayBox[boxId])
-    disbaleActive() 
-    var idItem = document.getElementById(e);
+    itembox= document.getElementById(arrayBox[temp]); //get the current div item
+    previousItembox =document.getElementById(arrayBox[boxId])//store previous div items
+    disbaleActive() //remove all the class 'active'
+    // var idItem = document.getElementById(e); 
     if (idItem.parentElement.classList.contains('active')) {
         idItem.parentElement.classList.remove('active')
     } else {
@@ -40,10 +38,7 @@ function btnCheck(e) {
         itembox.style.display=null;
         boxId=temp;
         disableActiveBox();
-       
     }
-
-
 }
 function disableActiveBox(){
    previousItembox.style.display="none";
@@ -52,4 +47,9 @@ function disbaleActive() {
     disActive.forEach(element => {
         element.classList.remove('active')
     });
+}
+
+//Send email.com
+function sendEmail(){
+    
 }

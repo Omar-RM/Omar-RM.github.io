@@ -248,9 +248,9 @@ font-size: 18px;
     display: flex;
     border-radius: 30px;
     background-color:  #ff8b0652;
-    justify-content: center;
     height: 3.5em;
-    margin: 2em 18em;
+    width: 975px;
+    margin: 2em 15em;
     align-items: center;
     /* width: auto; */
 }
