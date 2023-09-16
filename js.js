@@ -48,8 +48,3 @@ function disbaleActive() {
         element.classList.remove('active')
     });
 }
-
-//Send email.com
-function sendEmail(){
-    
-}

@@ -122,7 +122,7 @@ header a {
     justify-content: center;
 }
 #photo-box{
-    background: url(profile.jpg);
+    background: url(images/profile.jpg);
     background-color: #fff;
     background-position: center center;
     width: 450px;
