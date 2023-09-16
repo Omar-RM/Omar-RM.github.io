@@ -1,0 +1,52 @@
+:root{
+
+    --bg-body: hsl(0,0%,8%);
+    --bg-nav: hsl(0,0%,14%);
+    --acent: hsl(153,71%,59%);
+    --text1: hsl(0,0%,100%);
+    --text2: hsl(0,0%, 85%);
+
+}
+html{
+    box-sizing: border-box;
+    font-size:  100%;
+}
+*, *::before , *::after{
+box-sizing: inherit;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+#nav{
+    display: block;
+    background-color:var(--bg-nav) ;
+    height: 10.5em;
+}
+#home-nav{
+    display: flex;
+    justify-content:right;
+    
+}
+#home-nav h1 a{
+    text-decoration: none;
+    margin-right: 1em;
+    letter-spacing: 3px;
+    color:var(--acent);
+}
+#home-nav h1 a:hover{
+    color: var(--text1);
+}
+#social{
+    display: flex;
+    justify-content: right;
+    color: var(--text1);
+    padding-right: 5em;
+    margin-bottom: 3em;
+    /* border: red 1px solid;s */
+    align-items: center;
+}
+#social a{
+
+margin-right: 1em;
+}

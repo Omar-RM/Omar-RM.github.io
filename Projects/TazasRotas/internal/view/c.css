@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 80em;
+    background: url(../bg2.jpg);
+}
+/* 
+*************************
+ NAV SECTION
+ ************************
+*/
+nav {
+    position: fixed;
+    width: 2400px;
+    padding: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: #d4d4d4;
+   
+}
+
+.nav-bar {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    width: 1900px;
+    
+
+}
+
+.nav-bar-box-logo {
+    height: 3em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 35%;
+    
+}
+
+.nav-bar-box-logo h3 {
+    font-size: 2em;
+    color: black;
+}
+
+/* Nav btns */
+
+#nav-bar-btns {
+    width: 65%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-size: 1.3em;
+}
+
+#nav-bar-btns ul {
+    justify-content: center;
+    align-items: center;
+}
+/* Need to add this line otherwise the li element will ignore the width */
+.nav-bar-li {
+    float: left; 
+}
+
+#nav-bar-btns ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 150px;
+    border: 1px solid rgb(218,165,32);
+    text-align: center;
+    margin: 0 1em;
+    padding: .5em
+}#nav-bar-btns ul li:hover{
+ background-color: rgb(218,165,32);
+ color:#d4d4d4
+}
+
+#nav-bar-btns ul li a {
+    text-decoration: none;
+    color: black;
+    width: 10px;
+}
+
+/* 
+*************************
+ WRAP SECTION
+ ************************
+*/
+#wrap {
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 9em;
+    border: 1px solid red;
+}
+/* 
+*************************
+ LOCATION SECTION SECTION
+ ************************
+*/
+#location div{
+    height: 1000px;
+    border: 1px solid red;
+    width: 1500px;
+padding-top: 20em;
+}
