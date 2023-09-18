@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --boder: 1px solid yellow;
+}
 
 body {
     min-width: 80em;
     background: url(../bg2.jpg);
 }
+
 /* 
 *************************
  NAV SECTION
@@ -19,7 +23,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #d4d4d4;
-   
+
 }
 
 .nav-bar {
@@ -29,7 +33,7 @@ nav {
     align-items: center;
     height: 7em;
     width: 1900px;
-    
+
 
 }
 
@@ -39,7 +43,7 @@ nav {
     display: flex;
     align-items: center;
     width: 35%;
-    
+
 }
 
 .nav-bar-box-logo h3 {
@@ -62,22 +66,25 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 /* Need to add this line otherwise the li element will ignore the width */
 .nav-bar-li {
-    float: left; 
+    float: left;
 }
 
 #nav-bar-btns ul li {
     list-style-type: none;
     display: inline-block;
     width: 150px;
-    border: 1px solid rgb(218,165,32);
+    border: 1px solid rgb(218, 165, 32);
     text-align: center;
     margin: 0 1em;
     padding: .5em
-}#nav-bar-btns ul li:hover{
- background-color: rgb(218,165,32);
- color:#d4d4d4
+}
+
+#nav-bar-btns ul li:hover {
+    background-color: rgb(218, 165, 32);
+    color: #d4d4d4
 }
 
 #nav-bar-btns ul li a {
@@ -92,19 +99,72 @@ nav {
  ************************
 */
 #wrap {
-    max-width: 1160px;
+    width: 1600px;
     margin: auto;
-    padding-top: 9em;
+    justify-content: center;
     border: 1px solid red;
+    padding-top: 9em;
 }
+/* 
+*************************
+ CAFE IMAGES SLIDESHOW SECTION
+ ************************
+*/
+#image-slideshow{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    border: 1px solid red;
+    width: inherit;
+    margin-bottom: 2em;
+}
+
+#image-slideshow div:nth-child(1), #image-slideshow div:nth-child(3){
+align-items: center;
+display: flex;
+border: var(--boder)
+}
+#image-slideshow div:nth-child(2){
+    height: 600px;
+    width: 900px;
+background: url(../img/cafe/cafe.jpg);
+background-size:     cover;                      
+background-repeat:   no-repeat;
+top:100px;
+/* background-position: center center;   */
+}
+#image-slideshow div:nth-child(2):hover{
+    background-color: red;
+}
+#image-slideshow button{
+width: 100px;
+}
+
 /* 
 *************************
  LOCATION SECTION SECTION
  ************************
-*/
-#location div{
-    height: 1000px;
+*/ 
+#location {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
     border: 1px solid red;
-    width: 1500px;
-padding-top: 20em;
+    width: inherit;
+}
+
+#location div {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location iframe {
+    border: purple 1px solid;
+    align-items: center;
 }
