@@ -110,38 +110,10 @@ nav {
  CAFE IMAGES SLIDESHOW SECTION
  ************************
 */
+
 #image-slideshow{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 500px;
-    border: 1px solid red;
-    width: inherit;
-    margin-bottom: 2em;
+    
 }
-
-#image-slideshow div:nth-child(1), #image-slideshow div:nth-child(3){
-align-items: center;
-display: flex;
-border: var(--boder)
-}
-#image-slideshow div:nth-child(2){
-    height: 600px;
-    width: 900px;
-background: url(../img/cafe/cafe.jpg);
-background-size:     cover;                      
-background-repeat:   no-repeat;
-top:100px;
-/* background-position: center center;   */
-}
-#image-slideshow div:nth-child(2):hover{
-    background-color: red;
-}
-#image-slideshow button{
-width: 100px;
-}
-
 /* 
 *************************
  LOCATION SECTION SECTION
