@@ -4,6 +4,9 @@
 var slides = document.querySelectorAll('.slide-img');
 var slideBtns = document.querySelectorAll('.btn-img');
 let currentSlide = 1;
+let currBackground
+
+;
 
 var navBtn = function (m) {
         slideBtns.forEach((btn1) => {
@@ -24,7 +27,32 @@ slideBtns.forEach((btn, i) => {
 });
 
 //auto image display
+var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active-slide');
+    let i=1;
 
+    var repeater = () =>{
+        setTimeout(function(){
+            [...active].forEach((activeSlide)=>{
+             activeSlide.classList.remove('active-slide');
+            });
+
+            slides[i].classList.add('active-slide');
+            slideBtns[i].classList.add('active-slide');
+            i++;
+
+            if(slides.length ==i){
+                i=0;
+            }
+            if(i>slides.length){
+                return;
+            }
+            repeater();
+        }, 4000);
+    }
+    repeater();
+}
+repeat();
 
 ///////////////////////////////////
 /////       CART JS / JSON
