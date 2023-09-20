@@ -116,30 +116,36 @@ nav {
     justify-content: center;
 }
 #image-slideshow{
-    position: relative;width:800px;height: 700px;margin: 10px; background-color: black;
+    position: relative;width:800px;height: 700px;margin: 10px; background: #1d212B;
 }
-#image-slideshow .img{
+#image-slideshow .slide-img{
     z-index: 1;
     position: absolute;
     width: 100%;
+    clip-path: circle(0% at 0 50%);
 }
-#image-slideshow .img img{
+#image-slideshow .slide-img.active-slide{
+    clip-path: circle(150% at 0 50%);
+    transition: 1s;
+    transition-property: clip-path;
+}
+#image-slideshow .slide-img img{
     z-index: 1;
     border-radius: 5px;
     object-fit: scale-down;
 
 }
-#image-slideshow .img div{
+#image-slideshow .slide-img div{
     position: absolute; top:0; padding: 15px 30px;
 }
-#image-slideshow .img div h1{
+#image-slideshow .slide-img div h1{
     color: #fff;
     text-transform:  uppercase;
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 2px;
 }
-#image-slideshow .img div p{
+#image-slideshow .slide-img div p{
     color: #fff;
     background: rgba(0, 0, 0, 0.3);
     font-size: 16px;
@@ -163,6 +169,11 @@ nav {
     border-radius: 50%;
     cursor: pointer;
 }
+#image-slideshow .btns-images .btn-img.active-slide{
+    background: #2696E9;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
 /* 
 *************************
  LOCATION SECTION SECTION
