@@ -18,6 +18,7 @@ body {
 */
 nav {
     position: fixed;
+    z-index: 4;
     width: 2400px;
     padding: 1em 0 0 0;
     display: flex;
@@ -110,9 +111,57 @@ nav {
  CAFE IMAGES SLIDESHOW SECTION
  ************************
 */
-
+#slideshow{
+    display: flex;
+    justify-content: center;
+}
 #image-slideshow{
-    
+    position: relative;width:800px;height: 700px;margin: 10px; background-color: black;
+}
+#image-slideshow .img{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+#image-slideshow .img img{
+    z-index: 1;
+    border-radius: 5px;
+    object-fit: scale-down;
+
+}
+#image-slideshow .img div{
+    position: absolute; top:0; padding: 15px 30px;
+}
+#image-slideshow .img div h1{
+    color: #fff;
+    text-transform:  uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+#image-slideshow .img div p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#image-slideshow .btns-images{
+    z-index: 2;
+    position:absolute;
+    display: flex;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#image-slideshow .btns-images .btn-img{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height:12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 /* 
 *************************

@@ -1,3 +1,17 @@
+// 
+//   SLIDESHOW SECTION
+// 
+var slides = document.querySelectorAll('.img');
+var slideBtns = document.querySelectorAll('btn-img');
+let currentSlide=1;
+
+var nav = function(m){
+    slides[m].classList.add('acive-slide');
+    btns[m].classList.add('active-slide');
+}
+///////////////////////////////
+//       CART JS / JSON
+///////////////////////////////
 const pos = document.querySelector('#POS');
 const cartList = document.querySelector('#sumary');
 const subtotal = document.querySelector('#subtotal');
