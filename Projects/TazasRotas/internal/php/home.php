@@ -1,47 +1,9 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/comun.css">
-    <link rel="stylesheet" href="c.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <style>
-
-
-    </style>
-
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="nav-bar">
-                <div class="nav-bar-box-logo">
-                    <h3>TAZAS ROTAS
-                    </h3>
-                </div>
-                <div id="nav-bar-btns">
-                    <ul>
-                        <li class="nav-bar-li"><a href="#">HOME</a></li>
-                        <li class="nav-bar-li"><a href="#">MENU</a></li>
-                        <li class="nav-bar-li"><a href="#">ABOUT</a></li>
-                        <li class="nav-bar-li"><a href="#">CONTACT</a></li>
-                        <li class="nav-bar-li" style="background-color:rgb(218,165,32) ;"><a href="#">BOOK A TABLE</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <aside id="submenu">
-            <!-- <div id="prod-list"><img class="icon" src="sell.png"></div> -->
-            <div id="ventas"></div>
-        </aside>
-    </header>
-    <div id="wrap">
+<?php
+include 'header.php';
+?>
+ <section id="POS">ss
+ <?php include '../php/POS/POSmenu.php'?>
+ <div id="wrap">
         <main>
             <section id="home-section">
                 <img src="">
@@ -196,5 +158,8 @@
 
 
 </body>
-
-</html>
+</section>
+<?php include '../php/asideTotalVenta.php';?>
+<?php
+include '../php/footer.php';
+?>

@@ -52,7 +52,7 @@ var repeat = function(activeClass){
     }
     repeater();
 }
-repeat();
+// repeat(); / This function will show each picture in the slideshow after the interval is achieved.
 
 ///////////////////////////////////
 /////       CART JS / JSON

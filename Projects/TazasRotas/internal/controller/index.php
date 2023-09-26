@@ -8,7 +8,7 @@ $action = filter_input(INPUT_POST, 'action');
 if ($action == null) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == null) {
-        $action = 'POScaliente';
+        $action = 'home';
     }
 }
 switch ($action) {
@@ -35,6 +35,9 @@ switch ($action) {
         //     header("Location: ..".$e->getMessage());
         // }
 
+        break;
+    case 'home':
+        include '../php/home.php';
         break;
     case 'POScaliente':
         include '../php/POS/POScaliente.php';
@@ -71,8 +74,8 @@ switch ($action) {
             } else {
                 header("Location?action=productos");
             }
+        } {
         }
-        {}
 
 
         break;
