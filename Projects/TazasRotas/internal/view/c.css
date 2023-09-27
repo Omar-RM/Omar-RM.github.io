@@ -7,8 +7,11 @@
 }
 
 body {
-    min-width: 80em;
+    /* min-width: 80em; */
     background: url(../bg2.jpg);
+}
+header{
+    width: 100%;
 }
 
 /* 
@@ -17,9 +20,10 @@ body {
  ************************
 */
 nav {
-    position: fixed;
+    position:fixed;
+    top: 0;
     z-index: 4;
-    width: 2400px;
+    width: 100%;
     padding: 1em 0 0 0;
     display: flex;
     justify-content: center;
@@ -113,8 +117,11 @@ nav {
 */
 #home-section{
     width: 1600px;
-    height: 100vh;
-    background:red;
+    height:auto;
+    /* background:red; */
+}
+#home-section img{
+    width: 100%;
 }
 /* 
 *************************
