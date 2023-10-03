@@ -118,12 +118,32 @@ nav {
 #home-section{
     width: 1600px;
     height:auto;
-    /* background:red; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background:url(bg2.jpg);
 }
-#home-section img{
-    width: 100%;
+
+#home-section div{
+    width: inherit;
+    height:1065px;
+}
+
+#home-section div h2{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: 600px;
+    height:auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgba(202, 191, 191, 0.315);
+    text-align: justify;
+    padding: 3em;
+    color: #fff;
 }
 /* 
+
 *************************
  CAFE IMAGES SLIDESHOW SECTION
  ************************
@@ -223,4 +243,47 @@ nav {
 #location iframe {
     border: purple 1px solid;
     align-items: center;
+}
+/* 
+*************************
+ INSERT PRODUCT SECTION
+ ************************
+*/ 
+#insert-product-section{
+    width: 100%;
+    height: auto;
+    font-size: 23px;
+    
+}
+#insert-product-section form label{
+    display: inline-block;
+    margin-bottom: .3em;
+width: 100%;
+}
+#insert-product-section form label.gap{
+    margin-top: 1em;
+}
+#insert-product-section form select{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 23px;
+}
+#insert-product-section form input{
+    width: 80%;
+    padding: .5em;
+    font-size: 23px;
+}
+#insert-product-section form textarea{
+    width: 60%;
+    resize: none;
+    height: 300px;
+    border-radius: 10px;
+}
+#insert-product-section form button{
+    width: 60%;
+    font-size: 25px;
+    padding: .5em;
+
+    margin:  2em 0em 2em 20%;
 }

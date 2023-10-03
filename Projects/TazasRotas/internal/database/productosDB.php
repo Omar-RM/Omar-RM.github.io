@@ -14,7 +14,7 @@ try{
 $st->closeCursor();
 return true;
 }
-
+ 
 function showAllProductos(){
     global $db;
     $query ="SELECT * FROM product";
@@ -56,6 +56,25 @@ function addOrdersTrack($fecha, $empleado){
     $st = $db->prepare($query);
     $st->bindValue(':f', $fecha);
     $st->bindValue(':em', $empleado);
+        try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php?msg".$e->getMessage());
+    }
+    $st->closeCursor();
+    return true;
+}
+
+function addNewProduct($inputPriority,$inputProductName, $inputProductDescription,  $inputStock,  $inputPrice,$inputDate){
+    global $db;
+    $query ="INSERT INTO productsList(priority, name, description, stock, price, Date) VALUES (:iPriority,:iName,:iDescription,:iStock,:iPrice, :iDate)";
+    $st = $db->prepare($query);
+    $st->bindValue(':iPriority', $inputPriority);
+    $st->bindValue(':iName', $inputProductName);
+    $st->bindValue(':iDescription', $inputProductDescription);
+    $st->bindValue(':iStock',  $inputStock);
+    $st->bindValue(':iPrice',  $inputPrice);
+    $st->bindValue(':iDate',  $inputDate);
         try{
         $st->execute();
     }catch(PDOException $e){

@@ -8,10 +8,23 @@ $action = filter_input(INPUT_POST, 'action');
 if ($action == null) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == null) {
-        $action = 'home';
+        $action = 'update';
     }
 }
 switch ($action) {
+    case 'update':
+        include '../php/update.php';
+        break;
+    case 'insertProduct':
+        $inputPriority = filter_input(INPUT_POST, 'inputPriority');
+        $inputProductName = filter_input(INPUT_POST, 'inputProductName');
+        $inputProductDescription = filter_input(INPUT_POST, 'inputProductDescription');
+        $inputStock = filter_input(INPUT_POST, 'inputStock');
+        $inputPrice = filter_input(INPUT_POST, 'inputPrice');
+        $inputDate = filter_input(INPUT_POST, 'inputDate');
+        addNewProduct($inputPriority,$inputProductName, $inputProductDescription,  $inputStock,  $inputPrice, $inputDate );
+        include '../php/update.php';
+        break;
     case 'login':
         session_destroy();
         include '../php/show_login.php';

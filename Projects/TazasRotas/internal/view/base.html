@@ -44,8 +44,33 @@
     </header>
     <div id="wrap">
         <main>
-            <section id="home-section">
-                <img src="bg.avif">
+            <section id="insert-product-section"> 
+                <form action="index.php" method="POST" enctype="multipart/form-data" id="items">
+                    <input name="action" type="hidden" value="insertProduct">
+                    <label>PRIORITY</label>
+                    <select name="inputPriority">
+                        <option value="">---SELECT---</option>
+                        <option value="2">HIGH</option>
+                        <option value="1">REGULAR</option>
+                        <option value="0">LOW</option>
+                    </select>
+                    <label class="gap">PRODUCT</label>
+                    <input name="inputProductName" placeholder="PRODUCT NAME">
+                    <label class="gap">DESCRIPTION</label>
+                    <textarea name="inputProductDescription" placeholder="DESCRIPTION">
+                    </textarea>
+                    <label class="gap">PRICE</label>
+                    <input name="inputStock"placeholder="STOCK">
+                    <label class="gap">STOCK</label>
+                    <input placeholder="PRICE">
+                    <label class="gap">DATE</label>
+                    <input name="inputPrice" placeholder="PRICE" value="03/10/2023" readonly>
+                    <button> SUBMIT</button>
+
+                </form>
+
+            </section>
+            <section id="home-section"> 
                 <div>
                     <h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio labore quod placeat
